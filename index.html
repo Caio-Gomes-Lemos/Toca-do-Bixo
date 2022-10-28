@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,69 +9,133 @@
 
 
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
 
         }
 
-        
-        .logo_img{
-           
+
+
+
+        .logo_img {
+
             fill: none;
             height: 32px;
             width: 142px;
-            
+
+
+
         }
-        .header-menu{
+
+        .header-container {
             align-items: center;
             display: flex;
             border: solid 2px;
-            
-        
+            height: 100px;
+
+
+
+
         }
-        .nome-site a{
-            text-decoration: none;  
+
+        .header-menu {
+            align-items: center;
+            display: flex;
+
+            width: 100%;
+
+            position: relative;
+            height: 60px;
+
+        }
+
+        .nome-site a {
+            text-decoration: none;
             color: inherit;
+            margin-left: 500px;
+
 
 
         }
-        .barra-pesquisa{
-           position:top;
-           align-items: center;
-           margin-left: 10px;
+
+        .nome-site p {
+            margin-left: 200px;
+        }
+
+
+        .barra-pesquisa {
+
+
+            margin-left: 10px;
+            background-image: url(./img/tocadobixo.png );
+            background-position-x: center;
+            height: 80px;
+            position: flex;
+
+
+
+
+        }
+
+        #btnBusca {
+            width: 15px;
+            height: 15px;
+            padding-top: 10px;
+
+        }
+
+        #search {
+            margin-top: 20%;
+        }
+
+        .button {
+            background-color: #fff;
+            border: inherit;
         }
     </style>
 </head>
+
 <body>
-<main class="site">
- 
-    <header>
-        <div class=" container">
-            <div class="header-menu ">
-                <div class="logo">
-                    <a href="./index.html" target="_self" title="Ir para home">
-                        <img src="./img/153084.svg" class="logo_img">
-                </a>
+    <main class="site">
 
+        <header>
+            <div class=" container">
+                <div class="header-container ">
+                    <div class="header-menu">
+                        <div class="logo">
+                            <a href="./index.html" target="_self" title="Ir para home">
+                                <img src="./img/153084.svg" class="logo_img">
+                            </a>
+
+                        </div>
+                        <div class="nome-site">
+                            <a href="./index.html" target="_self" title="Ir para home">
+                                <p>Toca do bixo</p>
+                            </a>
+                        </div>
+                        <div class="barra-pesquisa">
+                            <form>
+                                <input type="search" name="procura" id="search">
+                                <button type="submit" class="button">
+                                    <img src="./img/picwish.png" id="btnBusca" />
+                                </button>
+                            </form>
+
+
+
+                        </div>
+                    </div>
                 </div>
-                <div class="nome-site">
-                    <a href="./index.html" target="_self" title="Ir para home">
-                        <p>Toca do bixo</p>
-                    </a>
-                </div>
-                <div class="barra-pesquisa">
-                    <input type="search" name="procura" id="search">
-                </div>
+
             </div>
-            
-        </div>
-    </header>
+        </header>
 
-</main>
- 
+    </main>
 
 
-    
+
+
 </body>
+
 </html>
